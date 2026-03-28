@@ -1,0 +1,171 @@
+* {
+    font-family: "Archivo Black", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 5%;
+    background-color: #ffbb67;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 65px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.section1 {
+    background-image: url(/images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.txt-section1 h1 {
+    font-size: 70px;
+    color:white;
+}
+
+.txt-section1 p {
+    color: white;
+    margin: 20px 0;
+}
+
+.btn-section1 {
+    background-color: #a6d3d0;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.section2 {
+    padding: 50px;
+    text-align: center;
+}
+
+.carrousel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carrousel-window {
+    width: 260px;
+    overflow: hidden;
+}
+
+.carrousel-move {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.btn-back,
+.btn-next {
+    background-color: #ffbb67;
+    border: none;
+    border-radius: 90px;
+    padding: 10px;
+    margin: 40px;
+    cursor: pointer;
+}
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a6cfc9;
+    padding: 50px;
+}
+
+.title-section3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-width: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.option img {
+    width: 200px;
+    padding-bottom: 10px;
+}
+
+.txt-section3 {
+    padding-bottom: 10px;
+}
+
+.btn-section3 {
+    background-color: #ffbb67;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;    
+}
+
+svg {
+    width: 30px;
+    padding: 7px;
+}
+
+.section4 {
+    background-image: url(/images/bg-grid.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+
+.section4 img {
+    max-width: 100%; 
+    height: auto;
+    width: 500px;
+}
+
+footer {
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+    padding: 40px 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 0px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .section4 {
+        flex-direction: column;
+        text-align: center;
+    }
+}
