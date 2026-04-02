@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,12 +14,12 @@ header {
     background-color: #ffbb67;
 }
 
-.nav-bar {
+.nav {
     display: flex;
     gap: 65px;
 }
 
-header nav a {
+.nav__link {
     text-decoration: none;
     color: black;
 }
@@ -35,21 +35,14 @@ header nav a {
     padding: 50px;
 }
 
-.txt-section1 h1 {
+.section1__title {
     font-size: 70px;
     color:white;
 }
 
-.txt-section1 p {
+.section1__text {
     color: white;
     margin: 20px 0;
-}
-
-.btn-section1 {
-    background-color: #a6d3d0;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
 }
 
 .section2 {
@@ -57,68 +50,62 @@ header nav a {
     text-align: center;
 }
 
-.carrousel {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.carrousel-window {
-    width: 260px;
-    overflow: hidden;
-}
-
-.carrousel-move {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.btn-back,
-.btn-next {
-    background-color: #ffbb67;
-    border: none;
-    border-radius: 90px;
-    padding: 10px;
-    margin: 40px;
-    cursor: pointer;
-}
 .section3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #a6cfc9;
-    padding: 50px;
+    padding: 50px 20px;
 }
 
-.title-section3 {
+.section3__title {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.option {
+.carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.carrousel__window {
+    width: 100%;
+    max-width: 260px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.carrousel__move {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrousel__option {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    min-width: 200px;
+    flex: 0 0 100%;
+    min-width: 100%;
     padding: 20px;
-    margin: 20px;
+    margin: 0px;
+    gap: 15px;
 }
 
-.option img {
+.carrousel__img {
     width: 200px;
-    padding-bottom: 10px;
+    height: auto;
+    display: block;
 }
 
-.txt-section3 {
-    padding-bottom: 10px;
-}
-
-.btn-section3 {
+.carrousel__btn {
     background-color: #ffbb67;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
-    cursor: pointer;    
+    border-radius: 50px;
+    cursor: pointer;   
 }
 
 svg {
@@ -136,13 +123,17 @@ svg {
     align-items: center;
 }
 
-.section4 img {
+.section4__text {
+    padding: 20px 0 ;
+}
+
+.section4__img {
     max-width: 100%; 
     height: auto;
     width: 500px;
 }
 
-footer {
+.footer {
     background-color: #333;
     display: flex;
     flex-wrap: wrap;
@@ -151,14 +142,67 @@ footer {
     padding: 40px 20px;
 }
 
-footer a {
+.footer__link {
     color: white;
     text-decoration: none;
     padding: 8px 0px;
 }
 
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: #a6d3d0;
+}
+
+.btn--secondary {
+    background: #ffbb67;
+}
+
+.btn--primary,
+.btn--secondary {
+    transition: transform 0.3s ease;
+}
+
+.btn--primary:hover,
+.btn--secondary:hover {
+    transform: scale(1.2);
+}
+
+.carrousel__btn:hover {
+    background-color: #ffac48;
+}
+
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.6s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
 @media (max-width: 768px) {
-    header {
+    .nav { 
+        flex-direction: column;
+        gap: 15px; 
+    }
+
+    .header {
         flex-direction: column;
         gap: 15px;
         text-align: center;
@@ -167,5 +211,11 @@ footer a {
     .section4 {
         flex-direction: column;
         text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 }

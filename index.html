@@ -10,68 +10,68 @@
     <title>Pop it!</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>POP IT!</div>
-        <nav class="nav-bar">
-            <a href="#section2">¿Que es Pop It?</a>
-            <a href="#section3">Opciones</a>
-            <a href="#section4">Sobre el juego</a>
+        <nav class="nav fade">
+            <a href="#section2" class="nav__link">¿Que es Pop It?</a>
+            <a href="#section3" class="nav__link">Opciones</a>
+            <a href="#section4" class="nav__link">Sobre el juego</a>
         </nav>        
     </header>
-    <section class="section1" id="section1">
-        <div class="txt-section1">
-        <h1 class="title-section1">POP IT!</h1>
-        <p class="p-section1">¡El mejor juguete antiestres de burbujas para una diversion infinita!</p>
-        <button class="btn-section1">Comprar</button>
+    <section class="section1 fade" id="section1">
+        <div class="section1__content">
+        <h1 class="section1__title">POP IT!</h1>
+        <p class="section1__text">¡El mejor juguete antiestres de burbujas para una diversion infinita!</p>
+        <button class="btn btn--primary">Comprar</button>
         </div>
     </section>
-    <section class="section2" id="section2">
-        <h2 class="title-section2">¿Que es Pop It?</h2>
-        <p class="p-section2">Un Pop It es un juguete de silicona flexible con burbujas de media esfera que se pueden presionar hasta hacer un “pop” y luego volver a inflar al darle la vuelta, similar al papel burbuja reutilizable. Viene en varias formas y colores, como cuadrados, círculos, manos, unicornios o animales, y en distintos tamaños, generalmente liviano y fácil de manipular.</p>
+    <section class="section2 fade" id="section2">
+        <h2 class="section2__title">¿Que es Pop It?</h2>
+        <p class="section2__text">Un Pop It es un juguete de silicona flexible con burbujas de media esfera que se pueden presionar hasta hacer un “pop” y luego volver a inflar al darle la vuelta, similar al papel burbuja reutilizable. Viene en varias formas y colores, como cuadrados, círculos, manos, unicornios o animales, y en distintos tamaños, generalmente liviano y fácil de manipular.</p>
     </section>
-    <section class="section3" id="section3">
-        <h2 class="title-section3">¡Elige tu Pop-It!</h2>
+    <section class="section3 fade" id="section3">
+        <h2 class="section3__title">¡Elige tu Pop-It!</h2>
         <div class="carrousel">
-            <button class="btn-back">
+            <button class="carrousel__btn carrousel__btn--back">
                 <svg viewBox="-5.5 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#bd7800" stroke="#bd7800"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>chevron-left</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-423.000000, -1196.000000)" fill="#855400"> <path d="M428.115,1209 L437.371,1200.6 C438.202,1199.77 438.202,1198.43 437.371,1197.6 C436.541,1196.76 435.194,1196.76 434.363,1197.6 L423.596,1207.36 C423.146,1207.81 422.948,1208.41 422.985,1209 C422.948,1209.59 423.146,1210.19 423.596,1210.64 L434.363,1220.4 C435.194,1221.24 436.541,1221.24 437.371,1220.4 C438.202,1219.57 438.202,1218.23 437.371,1217.4 L428.115,1209" id="chevron-left" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
             </button>
-            <div class="carrousel-window">
-                <div class="carrousel-move">
-                    <div class="option">
-                        <img src="images/square.png" alt="Un Pop It con forma de cuadrado" class="img-section3">
-                        <p class="txt-section3">Cuadrado multicolor</p>
-                        <button class="btn-section3">Comprar</button>
+            <div class="carrousel__window">
+                <div class="carrousel__move">
+                    <div class="carrousel__option">
+                        <img src="images/square.png" alt="Un Pop It con forma de cuadrado" class="carrousel__img float">
+                        <p class="carrousel__text">Cuadrado multicolor</p>
+                        <button class="btn btn--secondary">Comprar</button>
                     </div>
-                    <div class="option">
-                        <img src="images/amongus.png" alt="Un Pop It con forma de personaje de Among Us" class="img-section3">
-                        <p class="txt-section3">Among Us marmoleado</p>
-                        <button class="btn-section3">Comprar</button>
+                    <div class="carrousel__option">
+                        <img src="images/amongus.png" alt="Un Pop It con forma de personaje de Among Us" class="carrousel__img float">
+                        <p class="carrousel__text">Among Us marmoleado</p>
+                        <button class="btn btn--secondary">Comprar</button>
                     </div>
-                    <div class="option">
-                        <img src="images/round.png" alt="Un Pop It con forma de circulo" class="img-section3">
-                        <p class="txt-section3">Circulo multicolor</p>
-                        <button class="btn-section3">Comprar</button>
+                    <div class="carrousel__option">
+                        <img src="images/round.png" alt="Un Pop It con forma de circulo" class="carrousel__img float">
+                        <p class="carrousel__text">Circulo multicolor</p>
+                        <button class="btn btn--secondary">Comprar</button>
                     </div>
                 </div>
             </div>
-            <button class="btn-next">
+            <button class="carrousel__btn carrousel__btn--next">
                 <svg viewBox="-5.5 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>chevron-right</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-474.000000, -1196.000000)" fill="#855400"> <path d="M488.404,1207.36 L477.637,1197.6 C476.806,1196.76 475.459,1196.76 474.629,1197.6 C473.798,1198.43 473.798,1199.77 474.629,1200.6 L483.885,1209 L474.629,1217.4 C473.798,1218.23 473.798,1219.57 474.629,1220.4 C475.459,1221.24 476.806,1221.24 477.637,1220.4 L488.404,1210.64 C488.854,1210.19 489.052,1209.59 489.015,1209 C489.052,1208.41 488.854,1207.81 488.404,1207.36" id="chevron-right" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
             </button>
         </div>
     </section>
-    <section class="section4" id="section4">
+    <section class="section4 fade" id="section4">
         <div>
-            <h2 class="title-section4">Reglas del juego</h2>
-            <p class="p-section3">Los jugadores se turnan para presionar las burbujas. Se pueden presionar un maximo de tres burbujas a la vez pero estos (deben estar contiguos, no se pueden presionar varias burbujas a la vez amenos que esten una al lado de la otra). El objetivo es que el oponente sea el ultimo en presionar. ¡El ultimo jugador en presionar pierde!</p>
+            <h2 class="section4__title">Reglas del juego</h2>
+            <p class="section4__text">Los jugadores se turnan para presionar las burbujas. Se pueden presionar un maximo de tres burbujas a la vez pero estos (deben estar contiguos, no se pueden presionar varias burbujas a la vez amenos que esten una al lado de la otra). El objetivo es que el oponente sea el ultimo en presionar. ¡El ultimo jugador en presionar pierde!</p>
         </div>
-        <img src="images/photo.jpg" alt="Una mano presionando las burbujas de un Pop-It">
+        <img src="images/photo.jpg" alt="Una mano presionando las burbujas de un Pop-It" class="section4__img float">
     </section>        
-    <footer class="footer">
-        <a href="#">¿Quienes somos?</a>
-        <a href="#">Metodos de pago</a>
-        <a href="#">Entrega</a>
-        <a href="#">Preguntas frecuentes</a>
-        <a href="#">Contactenos</a>
+    <footer class="footer fade">
+        <a href="#" class="footer__link">¿Quienes somos?</a>
+        <a href="#" class="footer__link">Metodos de pago</a>
+        <a href="#" class="footer__link">Entrega</a>
+        <a href="#" class="footer__link">Preguntas frecuentes</a>
+        <a href="#" class="footer__link">Contactenos</a>
     </footer>
     <script src="/js/script.js"></script>
 </body>
